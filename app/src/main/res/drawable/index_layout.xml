@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+            android:opacity="opaque">
+    <!--
+     android:opacity=”opaque” 属性，这是为了防止在启动的时候出现背景的闪烁。
+    -->
+    <!-- 背景颜色-->
+    <item android:drawable="@color/white"/>
+    <!-- 背景上的其他图片元素，比如 一个居中显示的 logo_index 图标-->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/logo_index"/>
+    </item>
+    <!-- 右上角
+            android:gravity="top|right"
+    -->
+    <item>
+    <bitmap
+        android:gravity="bottom"
+        android:src="@drawable/bottom_text"/>
+    </item>
+</layer-list>

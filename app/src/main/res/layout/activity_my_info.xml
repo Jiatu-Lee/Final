@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".MyInfoActivity">
+
+    <include
+        android:id="@+id/login_portrait"
+        layout="@layout/login_portrait"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_light"/>
+
+    <RelativeLayout
+        android:id="@+id/help_center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/slip_color"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <include
+            android:id="@+id/slip_help_center"
+            layout="@layout/slip"/>
+    </RelativeLayout>
+
+    <View style="@style/bg_line"/>
+
+    <RelativeLayout
+        android:id="@+id/tel_service"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/slip_color"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <include
+            android:id="@+id/slip_tel_service"
+            layout="@layout/slip"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_light"/>
+
+    <View style="@style/bg_line"/>
+
+    <RelativeLayout
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/slip_color"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <include
+            android:id="@+id/slip_about_us"
+            layout="@layout/slip"/>
+    </RelativeLayout>
+
+    <View style="@style/bg_line"/>
+
+    <RelativeLayout
+        android:id="@+id/check_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/slip_color"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <include
+            android:id="@+id/slip_check_update"
+            layout="@layout/slip"/>
+    </RelativeLayout>
+</LinearLayout>

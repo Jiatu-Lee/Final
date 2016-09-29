@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc.worksite.aoko.util.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title_show"
+                layout="@layout/title_show"/>
+
+            <include
+                android:id="@+id/mine_content"
+                layout="@layout/mine_content"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/activity_my_info"
+            layout="@layout/activity_my_info"/>
+
+    </LinearLayout>
+</cc.worksite.aoko.util.SlidingMenu>

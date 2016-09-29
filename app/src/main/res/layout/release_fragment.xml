@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc.worksite.aoko.util.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                >
+
+                <TextView
+                    android:id="@+id/show_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="发 布"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
+                <ImageButton
+                    android:id="@+id/mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/hind"
+                    android:layout_toLeftOf="@+id/hind"
+                    android:layout_toStartOf="@+id/hind"
+                    android:background="@mipmap/title_mine"/>
+
+                <ImageButton
+                    android:id="@+id/hind"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+            <include android:id="@+id/include_content" layout="@layout/release_content"/>
+
+        </LinearLayout>
+
+        <include android:id="@+id/include_release" layout="@layout/activity_my_info"/>
+
+    </LinearLayout>
+</cc.worksite.aoko.util.SlidingMenu>

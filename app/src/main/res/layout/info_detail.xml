@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/info_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:padding="10dp"
+>
+    <TextView
+        android:id="@+id/show_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="默认时间"
+        android:textColor="@color/transparent"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/show_time"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="默认主标题"
+            android:textColor="@color/transparent"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/info_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/main_title"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/detail_png_1"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/info_icon"
+            android:layout_toEndOf="@+id/info_icon"
+            android:layout_toRightOf="@+id/info_icon"
+            android:background="@color/white"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="默认副标题"
+            android:textColor="@color/transparent"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</merge>

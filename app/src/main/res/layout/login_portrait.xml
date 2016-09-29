@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/login_portrait"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+    >
+
+    <ImageView
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/portrait"
+/>
+
+    <Button
+        android:textColor="@color/transparent"
+        android:textSize="16sp"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击登录"
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/login"
+/>
+</RelativeLayout>

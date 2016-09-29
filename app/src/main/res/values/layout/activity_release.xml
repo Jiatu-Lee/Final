@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/gray"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="发布信息"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_arrow"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- 定义第一个表格，指定第2列允许收缩，第3列允许拉伸 -->
+
+    <TableLayout
+        android:id="@+id/tablelayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+
+        <!-- 直接添加按钮，自己占用一行 -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btn01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="独自一行"
+                android:visibility="invisible">
+            </TextView>
+        </TableRow>
+
+
+    </TableLayout>
+    <!-- 定义第2个表格，指定第2列隐藏 -->
+
+    <!--<TableLayout-->
+    <!--android:id="@+id/tablelayout02"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:collapseColumns="1" >-->
+
+    <!--<TableRow>-->
+
+    <!--<Button-->
+    <!--android:background="@null"-->
+    <!--android:id="@+id/btn05"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="普通" >-->
+    <!--</Button>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn06"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="被隐藏列" >-->
+    <!--</Button>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn07"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="允许被拉伸" >-->
+    <!--</Button>-->
+    <!--</TableRow>-->
+    <!--</TableLayout>-->
+    <!-- 定义第3个表格，指定第2列填满空白-->
+
+    <TableLayout
+        android:id="@+id/tablelayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="类别"
+                android:textSize="18sp">
+            </Button>
+
+            <Button
+                android:id="@+id/btn09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="默认"
+                android:textSize="18sp">
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="标题"
+                android:textSize="18sp">
+            </Button>
+
+            <EditText
+                android:id="@+id/btn_09"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@null"
+                android:hint="  这里写标题">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_008"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="概述"
+                android:textSize="18sp">
+            </Button>
+
+            <EditText
+                android:id="@+id/btn_009"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@null"
+                android:hint="  简要叙述">
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="详情"
+                android:textSize="18sp">
+            </Button>
+
+            <EditText
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@null"
+                android:hint="  仔细的描述"
+                android:inputType="textMultiLine"
+                >
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="号码"
+                android:textSize="18sp">
+            </Button>
+
+            <EditText
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@null"
+                android:hint="  输入你的手机号码">
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+    </TableLayout>
+    <!-- 定义第3个表格，指定第2列横跨2列-->
+
+    <!--<TableLayout-->
+    <!--android:id="@+id/tablelayout04"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--&gt;-->
+
+    <!--<TableRow>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn10"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="普通" >-->
+    <!--</Button>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn11"-->
+    <!--android:layout_column="2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="填满剩余空白" >-->
+    <!--</Button>-->
+    <!--</TableRow>-->
+    <!--</TableLayout>-->
+    <Button
+        android:id="@+id/isnull"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_login_bg"
+        android:text="确定提交"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+</LinearLayout>

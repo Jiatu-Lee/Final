@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AoKo</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    <string name="message_search_hint">搜索&#8230;</string>
+
+    <string name="list_no_data_lost">暂时还未有失物信息</string>
+    <string name="list_no_data_found">暂时还未有招领信息</string>
+
+    <string name="title_hint">标题</string>
+    <string name="describe_hint">描述</string>
+    <string name="photo_hint">手机</string>
+
+    <string name="progress_loading">正在获取数据..</string>
+</resources>
